@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   
   s.default_subspec = 'Core'
+  s.resource_bundles = {'GCDWebServer.Privacy' => 'GCDWebServer/PrivacyInfo.xcprivacy'}
   
   s.subspec 'Core' do |cs|
     cs.source_files = 'GCDWebServer/**/*.{h,m}'
